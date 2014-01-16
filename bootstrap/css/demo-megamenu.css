@@ -1,0 +1,53 @@
+	
+body { padding: 3%; }
+
+.nav-mega {
+	width: 100%;
+  .dropdown { 
+		// disable relative positioning on dropdown container
+		// mega-menu will get left from parent .nav-mega
+		position: static; 
+	}
+	
+	.dropdown-menu.mega-menu {
+		@include box-sizing(border-box);
+		@include border-top-radius(0);
+		min-width: auto;
+    width: 100%;
+		margin-top: 0;
+		padding: 0;
+		border-color: #ccc;
+		> li {
+			//@include box-shadow(rgba(black, 0.1) 0 2px 6px inset);
+			padding: 20px;
+		}
+		.media-list {
+			.media { padding: 10px; font-size: 13px; }
+			.media-heading { font-size: 16px; }
+			//.media-object { max-width: 70px; }
+			
+		}
+	}
+}
+
+.media-list {
+		float: left;
+	}
+	
+.navbar-quicklinks {
+	float: right;
+	position: relative;
+	top: 0px;
+	margin-top: -33px;	
+}
+.navbar-quicklinks li {
+	margin-right: 10px;
+}
+
+.nav {
+	float: left;
+}
+
+.navbar .container {
+	margin-top: 20px;
+}
